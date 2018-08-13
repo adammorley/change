@@ -9,7 +9,7 @@ import "math"
 /*
     iterate through the coins available, using previously calculated minumum numbers to calculate the next number
 */
-func calculateChange(amount int, coins []int) (int, map[int]int) {
+func CalculateChange(amount int, coins []int) (int, map[int]int) {
     var minCoins = make(map[int]int)
     minCoins[0] = 0
     var coinsUsed = make(map[int]map[int]int)

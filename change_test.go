@@ -18,7 +18,7 @@ func TestChange(t *testing.T) {
 func testCase(t *testing.T, testCase int, amount int, coins []int, totalCoins int, validCoins map[int]int) {
     var numCoins int
     var coinsUsed map[int]int
-    numCoins, coinsUsed = calculateChange(amount, coins)
+    numCoins, coinsUsed = CalculateChange(amount, coins)
 
     if numCoins != totalCoins {
         t.Error("number of coins wrong for test case", testCase)

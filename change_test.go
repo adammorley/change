@@ -21,7 +21,7 @@ func testCase(t *testing.T, testCase int, amount int, coins []int, totalCoins in
 	numCoins, coinsUsed = CalculateChange(amount, coins)
 
 	if numCoins != totalCoins {
-		t.Error("number of coins wrong for test case", testCase)
+		t.Error("number of coins wrong for test case", testCase, numCoins, totalCoins)
 	} else if coinsDontMatch(coinsUsed, validCoins) {
 		t.Error("coins don't match for test case", testCase)
 	}
